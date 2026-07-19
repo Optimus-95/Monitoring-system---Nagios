@@ -7,7 +7,8 @@ sudo vi /etc/nginx/conf.d/nginx_ws.conf
 ```
 Add Nginx Configuration
 ### Add below in nginx_ws.conf: ###
-location /nagios {
+
+        location /nagios {
         alias /opt/nagios/share;
         index index.php index.html;
         server_tokens off;
